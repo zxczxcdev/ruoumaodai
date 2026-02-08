@@ -1,0 +1,139 @@
+/* === QUANTITY BUTTONS - CLEAN VERSION === */
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 1rem 0;
+}
+
+.btn-qty {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #2F5233;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  color: #2F5233;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+.btn-qty:hover {
+  background: #2F5233;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(47, 82, 51, 0.25);
+}
+
+.btn-qty:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.btn-qty:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.quantity-display {
+  min-width: 60px;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2F5233;
+  background: rgba(47, 82, 51, 0.05);
+  border-radius: 8px;
+  border: 2px solid rgba(47, 82, 51, 0.2);
+}
+
+/* === FORM INPUTS - FIX OVERFLOW === */
+.form-control,
+input.form-control,
+textarea.form-control {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* === RESPONSIVE IMPROVEMENTS === */
+@media (max-width: 768px) {
+  .btn-qty {
+    min-width: 44px;
+    height: 44px;
+    font-size: 1.4rem;
+  }
+
+  .quantity-display {
+    min-width: 70px;
+    font-size: 1.3rem;
+  }
+
+  /* Form Input Responsiveness */
+  .form-control {
+    font-size: 16px !important;
+    padding: 14px 16px !important;
+    min-height: 48px;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  textarea.form-control {
+    min-height: 80px;
+  }
+
+  .form-label {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.25rem;
+    width: 100%;
+  }
+
+  .form-wrapper {
+    padding: 1.5rem 1rem !important;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-control {
+    font-size: 16px !important;
+    padding: 12px 14px !important;
+  }
+
+  .package-grid {
+    gap: 12px;
+  }
+
+  .form-wrapper {
+    padding: 1.5rem 0.75rem !important;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

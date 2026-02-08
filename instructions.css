@@ -1,0 +1,149 @@
+/* === USAGE INSTRUCTIONS SECTION === */
+.instructions-section {
+  background: linear-gradient(135deg, #FAFAF5, #ffffff);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.instructions-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-gold), var(--primary-green), var(--primary-gold));
+}
+
+.instructions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instruction-item {
+  text-align: center;
+  position: relative;
+}
+
+.instruction-number {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, var(--primary-gold), #C5A028);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  border: 3px solid white;
+  z-index: 10;
+}
+
+.instruction-image-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding: 8px;
+  background: linear-gradient(135deg, var(--primary-gold), #C5A028, var(--primary-gold));
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.instruction-image-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.4);
+}
+
+.instruction-image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: white;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.instruction-image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  z-index: 2;
+  display: block;
+}
+
+.instruction-text {
+  padding: 0 1rem;
+}
+
+.instruction-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--primary-green);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.instruction-text p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .instructions-section {
+    padding: 3rem 0;
+  }
+
+  .instructions-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .instruction-image {
+    height: 200px;
+  }
+
+  .instruction-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+
+  .instruction-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .instruction-text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .instructions-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .instruction-image {
+    height: 220px;
+  }
+}

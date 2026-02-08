@@ -1,0 +1,104 @@
+/* === STICKY CONTACT BUTTONS === */
+.sticky-contact-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.contact-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+.contact-btn:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-btn:active {
+  transform: scale(0.95);
+}
+
+/* Individual button colors */
+.contact-btn-phone {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.contact-btn-messenger {
+  background: linear-gradient(135deg, #0084ff, #0066cc);
+}
+
+.contact-btn-zalo {
+  background: linear-gradient(135deg, #0068ff, #0052cc);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  50% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 0 0 8px rgba(46, 204, 113, 0.2);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sticky-contact-buttons {
+    bottom: 15px;
+    right: 15px;
+    gap: 10px;
+  }
+
+  .contact-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sticky-contact-buttons {
+    bottom: 10px;
+    right: 10px;
+    gap: 8px;
+  }
+
+  .contact-btn {
+    width: 46px;
+    height: 46px;
+  }
+
+  .contact-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Hide on very small screens when sticky footer is visible */
+@media (max-width: 768px) {
+  .sticky-footer.visible~.sticky-contact-buttons {
+    bottom: 80px;
+  }
+}

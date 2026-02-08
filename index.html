@@ -2,402 +2,545 @@
 <html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rượu truyền thống cao cấp - Phong cách Trung Hoa">
-    <meta property="og:title" content="Rượu Truyền Thống - Phong Cách Trung Hoa">
-    <meta property="og:description" content="Rượu cao cấp với hương vị đặc biệt, phong cách truyền thống Trung Quốc">
-    <meta property="og:type" content="website">
-    <title>Rượu Truyền Thống - Phong Cách Trung Hoa</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rượu Mao Đài Ống Tre - Tinh Hoa Văn Hóa Phúc Kiến">
+  <meta property="og:title" content="Rượu Mao Đài Ống Tre - Phong Cách Hoàng Gia">
+  <meta property="og:description" content="Rượu ủ trong ống tre tươi, hương vị thanh mát, hậu vị ngọt, không đau đầu.">
+  <meta property="og:type" content="website">
+  <title>Rượu Mao Đài Ống Tre - Tinh Hoa Phúc Kiến</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="quantity.css">
+  <link rel="stylesheet" href="form-fix.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="trust.css">
+  <link rel="stylesheet" href="avatar.css">
+  <link rel="stylesheet" href="sticky-buttons.css">
+  <link rel="stylesheet" href="instructions.css">
+  <link rel="stylesheet" href="conversion.css">
+  <link rel="stylesheet" href="gallery.css">
+  <!-- AOS Animation Library (Optional for scroll effects) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="cloud-pattern cloud-top-left"></div>
-        <div class="cloud-pattern cloud-top-right"></div>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <!-- Floating Bamboo Leaves Elements -->
+    <div class="floating-left"></div>
 
-        <!-- Floating Bamboo Leaves in Hero -->
-        <div class="floating-bamboo-leaf leaf-1">🎋</div>
-        <div class="floating-bamboo-leaf leaf-2">🌿</div>
-        <div class="floating-bamboo-leaf leaf-3">🎋</div>
+    <div class="container hero-content" data-aos="fade-up">
+      <h1 class="font-heading">
+        <span style="display:block; font-size: 0.5em; color: var(--primary-gold); margin-bottom: 10px;">Tinh Hoa Phúc
+          Kiến</span>
+        Rượu Mao Đài <br> <span class="text-gold">Ống Tre Tươi</span>
+      </h1>
+      <p>Hương vị thanh mát từ tre tươi hòa quyện cùng rượu nếp cái hoa vàng thượng hạng. <br>Đẳng cấp quà tặng - Tinh
+        tế tiệc tùng.</p>
 
-        <div class="hero-content">
-            <div class="ornament-line"></div>
-            <h1 class="hero-title">
-                <span class="chinese-accent">福</span>
-                Rượu Mao Đài
-                <span class="chinese-accent">禄</span>
-            </h1>
-            <p class="hero-subtitle">Phong Cách Hoàng Gia Trung Hoa</p>
-            <div class="ornament-line"></div>
+      <div class="d-flex justify-center hero-cta-buttons">
+        <a href="#order" class="btn btn-primary btn-pulse">
+          <span>🔥 Nhận Ưu Đãi 33% - Chỉ Hôm Nay</span>
+        </a>
+        <a href="#product" class="btn btn-gold">
+          <span>Khám Phá</span>
+        </a>
+      </div>
+      <!-- SOCIAL PROOF STATS BAR -->
+      <div class="stats-grid" style="margin-top: 2rem;">
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-icon">✅</div>
+          <div class="stat-number" data-target="12847">0</div>
+          <div class="stat-label">Khách Hàng Hài Lòng</div>
         </div>
-    </header>
 
-    <!-- Product Section -->
-    <section class="product-section" id="product">
-        <div class="container">
-            <div class="section-header">
-                <div class="divider-ornament"></div>
-                <h2 class="section-title">Sản Phẩm Đặc Biệt</h2>
-                <div class="divider-ornament"></div>
-            </div>
-
-            <div class="product-showcase">
-                <div class="product-image-wrapper">
-                    <div class="image-ornament"></div>
-
-                    <!-- Carousel Slider -->
-                    <div class="product-carousel">
-                        <div class="carousel-container">
-                            <div class="carousel-track" id="carouselTrack">
-                                <div class="carousel-slide active">
-                                    <img src="assets/product-1.jpg" alt="Rượu Ông Tre - Hình 1" class="carousel-image">
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/product-2.jpg" alt="Rượu Ông Tre - Hình 2" class="carousel-image">
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/product-3.jpg" alt="Rượu Ông Tre - Hình 3" class="carousel-image">
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/product-4.jpg" alt="Rượu Ông Tre - Hình 4" class="carousel-image">
-                                </div>
-                                <div class="carousel-slide">
-                                    <img src="assets/product-5.jpg" alt="Rượu Ông Tre - Hình 5" class="carousel-image">
-                                </div>
-                            </div>
-
-                            <!-- Navigation Arrows -->
-                            <button class="carousel-nav carousel-prev" id="carouselPrev">
-                                <span>‹</span>
-                            </button>
-                            <button class="carousel-nav carousel-next" id="carouselNext">
-                                <span>›</span>
-                            </button>
-                        </div>
-
-
-                        <!-- Dots Indicators -->
-                        <div class="carousel-dots" id="carouselDots">
-                            <span class="dot active" data-slide="0"></span>
-                            <span class="dot" data-slide="1"></span>
-                            <span class="dot" data-slide="2"></span>
-                            <span class="dot" data-slide="3"></span>
-                            <span class="dot" data-slide="4"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-details">
-                    <h3 class="product-name" id="productName">Rượu Mao Đài Ống Tre Phúc Kiến </h3>
-
-
-                    <div class="product-description" id="productDescription">
-                        <h4>Mô Tả Sản Phẩm</h4>
-                        <p>
-                            Là một loại rượu truyền thống Trung Quốc được sản xuất tại tỉnh Phúc Kiến, nổi bật với
-                            cách ủ rượu độc đáo trong ống tre tự nhiên thay vì bình hoặc thùng gỗ thông thường.
-                        </p>
-                        <p>Điểm khác biệt của sản phẩm là hương thơm thanh mát thoang thoảng từ tre, tạo cảm giác dịu
-                            ngọt, dễ uống hơn các loại rượu mạnh thông thường, đồng thời thiết kế ống tre cũng làm sản
-                            phẩm trở nên độc đáo, thích hợp làm quà biếu tặng hoặc trưng bày.</p>
-                        <ul class="product-features">
-                            <li>✨ Lên men tự nhiên trong ống tre</li>
-                            <li>🏺 Hậu vị ngọt</li>
-                            <li>👑 Không đau đầu</li>
-                            <li>🎁 Sang trọng, thích hợp làm quà tặng</li>
-                        </ul>
-
-                        <!-- Buy Now Button -->
-                        <div class="product-cta">
-                            <button class="buy-now-btn" id="buyNowBtn">
-                                <span class="btn-icon">🛒</span>
-                                <span>Nhận bảng giá</span>
-                                <span class="btn-arrow">→</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-icon">⭐</div>
+          <div class="stat-number"><span data-target="4.9">0</span>/5</div>
+          <div class="stat-label">Đánh Giá Trung Bình</div>
         </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="section-header">
-                <div class="divider-ornament"></div>
-                <h2 class="section-title">Đánh Giá Khách Hàng</h2>
-                <div class="divider-ornament"></div>
-            </div>
 
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        “Rượu uống rất êm, không gắt cổ như nhiều loại rượu mạnh khác. Mở ống tre ra là mùi thơm dễ
-                        chịu, hậu vị ngọt và sâu. Uống lai rai rất thích, đúng kiểu rượu để thưởng thức.”
-                    </p>
-                    <p class="testimonial-author">- Anh Minh, Hà Nội</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        “Mua về làm quà biếu sếp mà ai cũng khen. Ống tre nhìn lạ, sang và khác hẳn chai rượu thông
-                        thường. Đóng gói chắc chắn, nhìn vào là thấy giá trị ngay.” </p>
-                    <p class="testimonial-author">- Chị Lan, TP.HCM</p>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        “So với tầm giá thì rượu quá ổn. Hương vị đậm đà, uống vào thấy rõ chất rượu, không đau đầu.
-                        Mình
-                        mua combo 6 ống thấy rất kinh tế, dùng tiếp khách hay dịp lễ đều hợp.”
-                    </p>
-                    <p class="testimonial-author">- Anh Tuấn, Đà Nẵng</p>
-                </div>
-            </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-icon">🔥</div>
+          <div class="stat-number" data-target="5000">0</div>
+          <div class="stat-label">Đơn Hàng / Tháng</div>
         </div>
-    </section>
+      </div>
 
-    <!-- Target Audience Section -->
-    <section class="target-audience-section">
-        <div class="container">
-            <div class="section-header">
-                <div class="divider-ornament"></div>
-                <h2 class="section-title">Tuyệt Phẩm Này Dành Cho Ai?</h2>
-                <div class="divider-ornament"></div>
-            </div>
+      <!-- Video Demo -->
+      <div class="hero-video-container" data-aos="zoom-in" data-aos-delay="300">
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/product-1.jpg">
+          <source src="assets/video/demo.mp4" type="video/mp4">
+          Trình duyệt không hỗ trợ video.
+        </video>
+        <div class="video-play-icon">▶</div>
+      </div>
+    </div>
+  </section>
 
-            <div class="audience-grid">
-                <!-- Card 1: Biếu Tặng Đối Tác -->
-                <div class="audience-card">
-                    <div class="card-icon">🎁</div>
-                    <h3 class="card-title">Biếu Tặng Đối Tác</h3>
-                    <p class="card-description">
-                        Rượu ống tre mộc mạc nhưng "chất", thể hiện sự tinh tế và am hiểu văn hóa rượu của người
-                        tặng.
-                    </p>
-                </div>
 
-                <!-- Card 2: Tiệc Tùng Chiêu Đãi -->
-                <div class="audience-card">
-                    <div class="card-icon">🍻</div>
-                    <h3 class="card-title">Tiệc Tùng Chiêu Đãi</h3>
-                    <p class="card-description">
-                        Rượu 53 độ nhưng êm, không gây đau đầu, thích hợp cho những cuộc hàn huyên tâm giao.
-                    </p>
-                </div>
 
-                <!-- Card 3: Sưu Tầm & Trưng Bày -->
-                <div class="audience-card">
-                    <div class="card-icon">🏛️</div>
-                    <h3 class="card-title">Sưu Tầm & Trưng Bày</h3>
-                    <p class="card-description">
-                        Ống tre tự nhiên độc đáo, mang đậm văn hóa truyền thống, là món đồ sưu tầm giá trị cho người
-                        yêu
-                        rượu.
-                    </p>
-                </div>
-            </div>
+  <!-- PRODUCT SHOWCASE -->
+  <section id="product" class="product-showcase container">
+    <!-- Gallery/Carousel -->
+    <div class="slider-contain-wrapper" data-aos="fade-right">
+      <div class="slider-container">
+        <div class="slider-track" id="carouselTrack">
+          <img src="assets/product-1.jpg" class="slide" alt="Rượu ống tre 1">
+          <img src="assets/product-2.jpg" class="slide" alt="Rượu ống tre 2">
+          <img src="assets/product-3.jpg" class="slide" alt="Rượu ống tre 3">
         </div>
-    </section>
 
-    <!-- Order Form Section -->
-    <section class="order-section" id="order">
-        <div class="container">
-            <div class="section-header">
-                <div class="divider-ornament"></div>
-                <h2 class="section-title">Đặt Hàng Ngay</h2>
-                <div class="divider-ornament"></div>
-            </div>
-
-            <!-- FOMO Promo Banner -->
-            <div class="promo-banner">
-                <div class="promo-flash">
-                    <div class="flash-icon">⚡</div>
-                    <div class="flash-content">
-                        <h3 class="flash-title">🔥 FLASH SALE - GIẢM 35%</h3>
-                        <p class="flash-subtitle">Ưu đãi đặc biệt kết thúc sau:</p>
-                        <div class="inline-countdown">
-                            <span class="countdown-box" id="hoursBox">00</span>
-                            <span class="countdown-sep">:</span>
-                            <span class="countdown-box" id="minutesBox">30</span>
-                            <span class="countdown-sep">:</span>
-                            <span class="countdown-box" id="secondsBox">00</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="promo-indicators">
-                    <div class="indicator-item stock-indicator">
-                        <span class="indicator-icon">⚠️</span>
-                        <span class="indicator-text">Chỉ còn <strong id="stockCount">12</strong> sản phẩm</span>
-                    </div>
-                    <div class="indicator-item viewers-indicator">
-                        <span class="indicator-icon">👥</span>
-                        <span class="indicator-text"><strong id="viewerCount">23</strong> người đang xem</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trust Badges -->
-            <div class="trust-badges">
-                <div class="badge-item">
-                    <span class="badge-icon">✓</span>
-                    <span class="badge-text">Freeship Nội Thành </span>
-                </div>
-                <div class="badge-item">
-                    <span class="badge-icon">✓</span>
-                    <span class="badge-text">Giao hàng hỏa tốc </span>
-                </div>
-
-                <div class="badge-item">
-                    <span class="badge-icon">✓</span>
-                    <span class="badge-text">Cam kết chính hãng 100%</span>
-                </div>
-            </div>
-
-            <div class="order-form-wrapper">
-                <form id="orderForm" class="order-form">
-                    <div class="form-group">
-                        <label for="customerName">Họ và Tên <span class="required">*</span></label>
-                        <input type="text" id="customerName" name="customerName" required placeholder="Nguyễn Văn A">
-                        <span class="error-message" id="nameError"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="customerPhone">Số Điện Thoại <span class="required">*</span></label>
-                        <input type="tel" id="customerPhone" name="customerPhone" required placeholder="0123456789">
-                        <span class="error-message" id="phoneError"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="customerAddress">Địa Chỉ Nhận Hàng <span class="required">*</span></label>
-                        <textarea id="customerAddress" name="customerAddress" required rows="3"
-                            placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành phố"></textarea>
-                        <span class="error-message" id="addressError"></span>
-                    </div>
-
-                    <!-- Quantity Selection -->
-                    <div class="form-group">
-                        <label for="quantity">Số Lượng <span class="required">*</span></label>
-                        <div class="quantity-selector">
-                            <button type="button" class="qty-btn qty-minus" id="qtyMinus">−</button>
-                            <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" readonly>
-                            <button type="button" class="qty-btn qty-plus" id="qtyPlus">+</button>
-                        </div>
-                        <span class="error-message" id="quantityError"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Chọn Gói Sản Phẩm <span class="required">*</span></label>
-                        <div class="package-options">
-                            <label class="package-option">
-                                <input type="radio" name="package" value="single" data-price="199000" checked>
-                                <div class="package-card">
-                                    <div class="package-title">Mua Lẻ Ống</div>
-
-                                    <div class="package-desc">2 ống sẽ được tặng túi đôi</div>
-                                </div>
-                            </label>
-
-                            <label class="package-option">
-                                <input type="radio" name="package" value="box1" data-price="1050000">
-                                <div class="package-card">
-                                    <div class="package-badge">Phổ biến</div>
-                                    <div class="package-title">Mua 1 Thùng</div>
-                                    <div class="package-desc">1 thùng (6 ống) + 3 túi đôi</div>
-                                </div>
-                            </label>
-
-                            <label class="package-option">
-                                <input type="radio" name="package" value="box2" data-price="1900000">
-                                <div class="package-card">
-                                    <div class="package-badge best">Tiết kiệm nhất</div>
-                                    <div class="package-title">Mua 2 Thùng</div>
-                                    <div class="package-desc">2 thùng (12 ống) + 6 túi đôi</div>
-                                </div>
-                            </label>
-                        </div>
-                        <span class="error-message" id="packageError"></span>
-                    </div>
-
-                    <div class="total-price">
-                        <div class="total-original-row">
-                            <span class="total-label-small">Giá gốc:</span>
-                            <span class="total-original" id="totalOriginal">1,348,650đ</span>
-                        </div>
-                        <div class="total-original-row">
-                            <span class="total-label-small">Phí ship:</span>
-                            <span class="total-original" id="totalOriginal">0đ</span>
-                        </div>
-                        <div class="total-sale-row">
-                            <span class="total-label">Tổng thanh toán:</span>
-                            <span class="total-amount" id="totalAmount">999,000đ</span>
-                        </div>
-                        <div class="savings-row">
-                            <span class="savings-text">💰 Tiết kiệm:</span>
-                            <span class="savings-amount" id="savingsAmount">349,650đ</span>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="submit-btn" id="submitBtn">
-                        <span class="btn-text">Đặt Hàng Ngay</span>
-                        <span class="btn-loading" style="display: none;">Đang xử lý...</span>
-                    </button>
-
-                    <div class="form-message" id="formMessage"></div>
-                </form>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="cloud-pattern cloud-bottom-left"></div>
-        <div class="cloud-pattern cloud-bottom-right"></div>
-        <div class="container">
-            <div class="footer-ornament"></div>
-            <p class="footer-text">
-                <span class="chinese-accent">福</span>
-                Rượu Truyền Thống - Tinh Hoa Văn Hóa Phương Đông
-                <span class="chinese-accent">寿</span>
-            </p>
-            <p class="footer-copyright">&copy; 2026 - Mọi quyền được bảo lưu</p>
-        </div>
-    </footer>
-
-    <!-- Success Popup Modal -->
-    <div class="modal-overlay" id="successModal">
-        <div class="modal-content">
-            <div class="modal-icon">
-                <div class="success-checkmark">
-                    <div class="check-icon">
-                        <span class="icon-line line-tip"></span>
-                        <span class="icon-line line-long"></span>
-                        <div class="icon-circle"></div>
-                        <div class="icon-fix"></div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="modal-title">Đặt Hàng Thành Công!</h2>
-            <p class="modal-message">
-                Vui lòng chú ý nghe máy để xác nhận đơn hàng.<br>
-                Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.
-            </p>
-            <button class="modal-close-btn" id="closeModalBtn">Đóng</button>
-        </div>
+        <div class="slider-nav prev" id="carouselPrev">‹</div>
+        <div class="slider-nav next" id="carouselNext">›</div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Product Details -->
+    <div class="product-info" data-aos="fade-left">
+      <h2 class="section-title text-left" style="margin-left: 0; text-align: left;">Tuyệt Phẩm <br>Từ Thiên Nhiên</h2>
+      <p class="mb-3">
+        Rượu được ủ trực tiếp trong cây tre tươi còn sống. Trải qua quá trình quang hợp và trao đổi chất,
+        rượu hấp thụ tinh túy từ thân tre (Bamboo Mists), giúp loại bỏ độc tố (Andehit) và tạo nên hương vị
+        thanh khiết độc bản.
+      </p>
+
+      <ul class="feature-list">
+        <li class="feature-item">
+          <div class="feature-icon">🌿</div>
+          <span><strong>100% Tự Nhiên:</strong> Ủ trong ống tre tươi sống.</span>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon">💧</div>
+          <span><strong>Hương Vị:</strong> Thanh mát, êm dịu, hậu ngọt sâu.</span>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon">👑</div>
+          <span><strong>Không Đau Đầu:</strong> Đã khử bỏ tạp chất độc hại.</span>
+        </li>
+        <li class="feature-item">
+          <div class="feature-icon">🎁</div>
+          <span><strong>Độc Đáo:</strong> Đập ống uống rượu - Trải nghiệm thú vị.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <!-- TRUST BADGES -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-badge" data-aos="fade-up" data-aos-delay="100">
+          <div class="trust-icon">�️</div>
+          <div class="trust-title">HOÀN TIỀN 100%</div>
+          <div class="trust-description">Nếu phát hiện hàng giả</div>
+        </div>
+
+        <div class="trust-badge" data-aos="fade-up" data-aos-delay="200">
+          <div class="trust-icon">🚚</div>
+          <div class="trust-title">FREESHIP TOÀN QUỐC</div>
+          <div class="trust-description">Đơn từ 6 ống trở lên</div>
+        </div>
+
+        <div class="trust-badge" data-aos="fade-up" data-aos-delay="300">
+          <div class="trust-icon">�</div>
+          <div class="trust-title">HỖ TRỢ 24/7</div>
+          <div class="trust-description">Luôn sẵn sàng tư vấn</div>
+        </div>
+
+        <div class="trust-badge" data-aos="fade-up" data-aos-delay="400">
+          <div class="trust-icon">🔒</div>
+          <div class="trust-title">THANH TOÁN BẢO MẬT</div>
+          <div class="trust-description">Kiểm hàng trước khi nhận</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="container mb-4" data-aos="fade-up">
+    <div class="section-header">
+      <span class="section-subtitle">Khách Hàng Nói Gì</span>
+      <h2 class="section-title">Đánh Giá Thực Tế</h2>
+    </div>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="quote-icon">“</div>
+        <p class="mb-2">"Rượu uống rất êm, mùi tre thơm nhẹ nhàng. Mang đi biếu sếp khen nức nở vì lạ và sang."</p>
+        <div class="d-flex align-center">
+          <img src="assets/avatars/avatar-1.jpg" alt="Minh Tuấn" class="testimonial-avatar-img">
+          <div>
+            <strong>Anh Minh Tuấn</strong><br>
+            <small class="text-muted">Hà Nội</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-icon">“</div>
+        <p class="mb-2">"Đóng gói cẩn thận, giao hàng nhanh. Mình mua 1 thùng về đãi tiệc ai cũng tò mò hỏi mua ở đâu."
+        </p>
+        <div class="d-flex align-center">
+          <img src="assets/avatars/avatar-2.jpg" alt="Lan Anh" class="testimonial-avatar-img">
+          <div>
+            <strong>Chị Lan Anh</strong><br>
+            <small class="text-muted">TP.HCM</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="quote-icon">“</div>
+        <p class="mb-2">"Đập ống rượu ra cảm giác rất phấn khích. Rượu màu vàng nhạt đẹp mắt, vị ngọt hậu rất ngon."</p>
+        <div class="d-flex align-center">
+          <img src="assets/avatars/avatar-3.jpg" alt="Quốc Hùng" class="testimonial-avatar-img">
+          <div>
+            <strong>Anh Quốc Hùng</strong><br>
+            <small class="text-muted">Đà Nẵng</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USAGE INSTRUCTIONS -->
+  <section class="instructions-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Hướng Dẫn Chi Tiết</span>
+        <h2 class="section-title">HƯỚNG DẪN SỬ DỤNG RƯỢU ỐNG TRE PHÚC KIẾN</h2>
+      </div>
+
+      <div class="instructions-grid">
+        <!-- Step 1 -->
+        <div class="instruction-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="instruction-number">1</div>
+          <div class="instruction-image-wrapper">
+            <img src="assets/instructions/step-1.jpg" alt="Bước 1" class="instruction-image">
+          </div>
+          <div class="instruction-text">
+            <h3>Chuẩn Bị</h3>
+            <p>Chuẩn bị rượu ống tre và búa gỗ (được tặng kèm)</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="instruction-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="instruction-number">2</div>
+          <div class="instruction-image-wrapper">
+            <img src="assets/instructions/step-2.jpg" alt="Bước 2" class="instruction-image">
+          </div>
+          <div class="instruction-text">
+            <h3>Gõ Nhẹ</h3>
+            <p>Dùng búa gỗ gõ vào mắt tre để tạo lỗ rót rượu</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="instruction-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="instruction-number">3</div>
+          <div class="instruction-image-wrapper">
+            <img src="assets/instructions/step-3.jpg" alt="Bước 3" class="instruction-image">
+          </div>
+          <div class="instruction-text">
+            <h3>Tạo Lỗ</h3>
+            <p>Tạo lỗ vừa đủ để rót được rượu ra ngoài</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="instruction-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="instruction-number">4</div>
+          <div class="instruction-image-wrapper">
+            <img src="assets/instructions/step-4.jpg" alt="Bước 4" class="instruction-image">
+          </div>
+          <div class="instruction-text">
+            <h3>Thưởng Thức</h3>
+            <p>Thưởng thức loại rượu độc đáo này</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER TRUST GALLERY -->
+  <section class="customer-gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Niềm Tin Của Khách Hàng</span>
+        <h2 class="section-title">NHỮNG KHÁCH HÀNG ĐÃ TIN TƯỞNG</h2>
+      </div>
+
+      <div class="masonry-grid">
+        <div class="masonry-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/customers/customer-1.jpg" alt="Khách hàng 1" class="masonry-img gallery-image"
+            data-src="assets/customers/customer-1.jpg">
+        </div>
+        <div class="masonry-item" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/customers/customer-2.jpg" alt="Khách hàng 2" class="masonry-img gallery-image"
+            data-src="assets/customers/customer-2.jpg">
+        </div>
+        <div class="masonry-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/customers/customer-3.jpg" alt="Khách hàng 3" class="masonry-img gallery-image"
+            data-src="assets/customers/customer-3.jpg">
+        </div>
+        <div class="masonry-item" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/customers/customer-4.jpg" alt="Khách hàng 4" class="masonry-img gallery-image"
+            data-src="assets/customers/customer-4.jpg">
+        </div>
+        <div class="masonry-item" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/customers/customer-5.jpg" alt="Khách hàng 5" class="masonry-img gallery-image"
+            data-src="assets/customers/customer-5.jpg">
+        </div>
+        <div class="masonry-item" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/customers/customer-6.jpg" alt="Khách hàng 6" class="masonry-img gallery-image"
+            data-src="assets/customers/customer-6.jpg">
+        </div>
+        <div class="masonry-item" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/customers/customer-7.jpg" alt="Khách hàng 7" class="masonry-img gallery-image"
+            data-src="assets/customers/customer-7.jpg">
+        </div>
+        <div class="masonry-item" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/customers/customer-8.jpg" alt="Khách hàng 8" class="masonry-img gallery-image"
+            data-src="assets/customers/customer-8.jpg">
+        </div>
+        <div class="masonry-item" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/customers/customer-9.jpg" alt="Khách hàng 9" class="masonry-img gallery-image"
+            data-src="assets/customers/customer-9.jpg">
+        </div>
+        <div class="masonry-item" data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/customers/customer-10.jpg" alt="Khách hàng 10" class="masonry-img gallery-image"
+            data-src="assets/customers/customer-10.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER SECTION -->
+  <section id="order" class="order-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Ưu Đãi Đặc Biệt</span>
+        <h2 class="section-title">Đặt Hàng Ngay</h2>
+        <div style="margin-top: 10px; font-weight: bold; color: var(--accent-red);">
+          🔥 Chỉ còn <span id="stockCount" style="font-size: 1.2rem;">12</span> suất ưu đãi
+        </div>
+      </div>
+
+      <div class="form-wrapper">
+        <form id="orderForm">
+          <!-- Package Selection -->
+          <h3 class="font-heading text-center mb-3">Chọn Gói Sản Phẩm</h3>
+
+          <div class="package-grid">
+            <!-- Option 1 -->
+            <label class="package-label">
+              <input type="radio" name="package" value="single">
+              <div class="package-card" id="pkg-single">
+                <div class="package-title">Dùng Thử</div>
+                <div class="package-price">199.000đ</div>
+                <small class="text-muted">1 Ống Tre (500ml)</small>
+              </div>
+            </label>
+
+            <!-- Option 2 (Popular) -->
+            <label class="package-label">
+              <input type="radio" name="package" value="box1" checked>
+              <div class="package-card active" id="pkg-box1">
+                <!-- Default visual active -->
+                <div class="badge-popular">Phổ Biến Nhất</div>
+                <div class="package-title">1 Thùng (6 Ống)</div>
+                <div class="package-price">1.050.000đ</div>
+                <small class="text-muted">Tặng 3 Túi Đôi + Freeship</small>
+              </div>
+            </label>
+
+            <!-- Option 3 -->
+            <label class="package-label">
+              <input type="radio" name="package" value="box2">
+              <div class="package-card" id="pkg-box2">
+                <div class="package-title">2 Thùng (12 Ống)</div>
+                <div class="package-price">1.900.000đ</div>
+                <small class="text-muted">Tặng 6 Túi Đôi + Freeship</small>
+              </div>
+            </label>
+          </div>
+
+          <!-- Customer Info -->
+          <div class="form-group">
+            <label class="form-label">Họ và Tên</label>
+            <input type="text" id="customerName" class="form-control" placeholder="Nhập họ tên của bạn..." required>
+            <span class="error-message" id="nameError" style="color: red; font-size: 0.8rem; display: none;"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Số Điện Thoại</label>
+            <input type="tel" id="customerPhone" class="form-control" placeholder="Nhập số điện thoại..." required>
+            <span class="error-message" id="phoneError" style="color: red; font-size: 0.8rem; display: none;"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Địa Chỉ Nhận Hàng</label>
+            <textarea id="customerAddress" class="form-control" rows="2"
+              placeholder="Số nhà, Phường/Xã, Quận/Huyện, Tỉnh/Thành..." required></textarea>
+            <span class="error-message" id="addressError" style="color: red; font-size: 0.8rem; display: none;"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label text-center" style="display: block;">Số Lượng</label>
+            <div class="quantity-wrapper">
+              <button type="button" class="btn-qty" id="qtyMinus">−</button>
+              <div class="quantity-display" id="quantity">1</div>
+              <button type="button" class="btn-qty" id="qtyPlus">+</button>
+            </div>
+          </div>
+
+          <!-- Total Calculation -->
+          <div style="background: #f9f9f9; padding: 15px; border-radius: 8px; margin-bottom: 2rem;">
+            <div class="d-flex justify-center align-center" style="gap: 10px;">
+              <span>Tổng thanh toán:</span>
+              <span id="totalAmount"
+                style="font-size: 1.5rem; font-weight: 700; color: var(--accent-red);">1.050.000đ</span>
+            </div>
+            <div class="text-center" style="font-size: 0.9rem; color: var(--primary-green);">
+              (Tiết kiệm: <span id="savingsAmount">300.000đ</span>)
+            </div>
+          </div>
+
+          <button type="submit" id="submitBtn" class="btn btn-primary btn-pulse" style="width: 100%;">
+            <span class="btn-text">ĐẶT HÀNG NGAY</span>
+            <span class="btn-loading" style="display: none;">Đang xử lý...</span>
+          </button>
+
+          <div id="formMessage" style="text-align: center; margin-top: 15px; color: red;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" data-aos="fade-up">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Liên Hệ Với Chúng Tôi</span>
+        <h2 class="section-title">Thông Tin Liên Hệ</h2>
+      </div>
+
+      <div class="contact-grid">
+        <a href="tel:0559595165" class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="contact-icon">📞</div>
+          <div class="contact-label">Số Điện Thoại</div>
+          <div class="contact-value">0559 595 165</div>
+        </a>
+
+        <a href="https://zalo.me/0559595165" target="_blank" class="contact-card" data-aos="zoom-in"
+          data-aos-delay="200">
+          <div class="contact-icon">💬</div>
+          <div class="contact-label">Zalo</div>
+          <div class="contact-value">0559 595 165</div>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61586964167243" target="_blank" class="contact-card"
+          data-aos="zoom-in" data-aos-delay="300">
+          <div class="contact-icon">📘</div>
+          <div class="contact-label">Fanpage</div>
+          <div class="contact-value">Facebook</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: var(--primary-green); color: white; padding: 3rem 0; text-align: center;">
+    <div class="container">
+      <h3 class="font-heading" style="color: var(--primary-gold); margin-bottom: 1rem;">Rượu Mao Đài Ống Tre</h3>
+      <p>Tinh hoa văn hóa ẩm thực Phương Đông</p>
+      <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+        &copy; 2026 Bản quyền thuộc về Uncle Tre. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY FOOTER (MOBILE ONLY) -->
+  <div class="sticky-footer" id="stickyFooter">
+    <div class="d-flex align-center">
+      <img src="assets/product-1.jpg"
+        style="width: 40px; height: 40px; border-radius: 4px; object-fit: cover; margin-right: 10px;">
+      <div>
+        <div style="font-weight: 700; font-size: 0.9rem;">Ưu đãi -35%</div>
+        <div style="color: var(--accent-red); font-size: 0.8rem;">Sắp kết thúc!</div>
+      </div>
+    </div>
+    <a href="#order" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Mua Ngay</a>
+  </div>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+      <div style="font-size: 4rem; color: var(--primary-green); margin-bottom: 1rem;">✓</div>
+      <h2 class="font-heading" style="margin-bottom: 1rem;">Đặt Hàng Thành Công!</h2>
+      <p>Cảm ơn bạn đã tin tưởng. Chúng tôi sẽ liên hệ lại sớm nhất để xác nhận đơn hàng.</p>
+      <button class="btn btn-gold" id="closeModalBtn" style="margin-top: 2rem;">Đóng</button>
+    </div>
+  </div>
+
+  <!-- STICKY CONTACT BUTTONS -->
+  <div class="sticky-contact-buttons">
+    <a href="tel:0559595165" class="contact-btn contact-btn-phone" title="Gọi điện">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+        </path>
+      </svg>
+    </a>
+
+    <a href="https://m.me/61586964167243" target="_blank" class="contact-btn contact-btn-messenger" title="Messenger">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12 2C6.477 2 2 6.145 2 11.243c0 2.912 1.445 5.507 3.705 7.2V22l3.405-1.867c.908.25 1.87.384 2.89.384 5.523 0 10-4.145 10-9.243S17.523 2 12 2zm.993 12.493l-2.548-2.718-4.974 2.718 5.467-5.8 2.61 2.718 4.912-2.718-5.467 5.8z" />
+      </svg>
+    </a>
+
+    <a href="https://zalo.me/0559595165" target="_blank" class="contact-btn contact-btn-zalo" title="Zalo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.5 13.5h-7c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h7c.276 0 .5.224.5.5s-.224.5-.5.5zm0-3h-7c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h7c.276 0 .5.224.5.5s-.224.5-.5.5zm0-3h-7c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h7c.276 0 .5.224.5.5s-.224.5-.5.5z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Fullscreen image">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+  </script>
+  <script src="number-animation.js"></script>
+  <script src="gallery-lightbox.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

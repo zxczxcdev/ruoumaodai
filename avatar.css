@@ -1,0 +1,34 @@
+/* === TESTIMONIAL AVATAR IMAGES === */
+.testimonial-avatar-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 14px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  border: 3px solid white;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-avatar-img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive avatar sizing */
+@media (max-width: 768px) {
+  .testimonial-avatar-img {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    border: 2px solid white;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-avatar-img {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+  }
+}
